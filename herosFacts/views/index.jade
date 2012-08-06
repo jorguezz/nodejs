@@ -1,0 +1,21 @@
+script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
+script(src="/javascripts/view.index.js")
+
+#left-column.column
+  h2 Elige tu héroe
+  ul#heroes
+    each hero in heroes
+      li(class='hero-name')
+        a(href="#") #{hero.name}
+
+  h2 Heroes
+  label(for="new-hero") Añadir nuevo heroe:
+  textarea#new-hero
+  a(id='add-new-hero', href='#') Añadir
+
+#right-column.column
+  h2 Facts
+  ul#facts
+  label(for="new-fact") Añadir nuevo fact:
+  textarea#new-fact
+  a(id='add-new-fact', href='#') Añadir
