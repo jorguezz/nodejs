@@ -1,4 +1,4 @@
 node
 ====
 
-Apps node express socket.io
+Examples node.js apps express socket.io
